@@ -4,7 +4,6 @@ require 'statement'
 describe 'Feature test' do
   it 'returns a statement with all transactions' do
     account = Account.new
-    statement = Statement.new
     account.credit(1000)
     account.credit(2000)
     account.debit(500)
