@@ -1,7 +1,7 @@
 require_relative './account.rb'
 
 class Statement
-  def view_statement(transaction_history)
+  def generate_statement(transaction_history)
      ['date || credit || debit || balance'] +
        transaction_history.reverse.map do |item|
          [
@@ -11,6 +11,10 @@ class Statement
            print_float(item[:balance])
          ].join(' || ')
        end
+  end
+
+  def view_statement(transaction_history)
+    generate_statement(transaction_history).join("\n")
   end
 
 private
