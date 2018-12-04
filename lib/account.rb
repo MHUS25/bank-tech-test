@@ -7,6 +7,7 @@ class Account
   end
 
   def credit(deposit, date = transaction_date)
+    raise 'Cannot deposit negative amount' if 0 > deposit
     @balance += deposit
     @transaction_history << { date: date,
                               credit: deposit,

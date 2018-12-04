@@ -9,6 +9,11 @@ describe Account do
       account.credit(1000)
       expect(account.balance).to eq 1000
     end
+
+    it 'raises an error when a negative amount is deposited' do
+      account = Account.new
+      expect { account.credit(-100) }.to raise_error 'Cannot deposit negative amount'
+    end
   end
 
   describe 'debit' do
