@@ -23,3 +23,28 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 ```
+
+## Getting started
+
+### To set up the project
+
+1. clone repo to your local machine `git clone https://github.com/MHUS25/bank-tech-test.git`
+2. Run the command `gem install bundle` (if you don't have bundle already)
+3. When the installation completes, `run bundle`
+
+## Usage
+
+Run the program from the command line.
+
+
+## Running tests
+
+To run tests `rspec`
+
+## My Approach
+
+Two classes: Account (responsible for making and recording transactions) and Statement responsible for printing a statement).
+
+## Screenshots
+
+![ScreenShot](./public/images/ScreenShot.png)
