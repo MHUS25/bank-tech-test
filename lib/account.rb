@@ -23,6 +23,10 @@ class Account
                               balance: @balance }
   end
 
+  def view_statement(statement = Statement.new)
+    statement.view_statement(@transaction_history)
+  end
+
   private
 
   def transaction_date
