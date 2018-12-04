@@ -19,4 +19,12 @@ describe Account do
     account.credit(300)
     expect{account.debit(500)}.to raise_error "Insufficient funds"
   end
+
+  it 'records transactions' do
+    account = Account.new
+    account.credit(1000)
+    account.credit(2000)
+    account.debit(500)
+    expect(account.transaction_history.length).to eq 3
+  end
 end
