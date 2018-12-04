@@ -7,7 +7,8 @@ class Account
   end
 
   def credit(deposit, date = transaction_date)
-    raise 'Cannot deposit negative amount' if 0 > deposit
+    raise 'Cannot deposit negative amount' if deposit < 0
+
     @balance += deposit
     @transaction_history << { date: date,
                               credit: deposit,
@@ -16,8 +17,9 @@ class Account
   end
 
   def debit(withdrawal, date = transaction_date)
-    raise 'Cannot withdraw negative amount' if 0 > withdrawal
+    raise 'Cannot withdraw negative amount' if withdrawal < 0
     raise 'Insufficient funds' if withdrawal > @balance
+
     @balance -= withdrawal
     @transaction_history << { date: date,
                               credit: nil,

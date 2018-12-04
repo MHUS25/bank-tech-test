@@ -2,7 +2,6 @@ require 'account'
 require 'statement'
 
 describe 'Feature test' do
-
   it 'returns a statement with all transactions' do
     account = Account.new
     statement = Statement.new
