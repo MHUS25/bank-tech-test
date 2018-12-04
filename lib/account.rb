@@ -16,8 +16,8 @@ class Account
   end
 
   def debit(withdrawal, date = transaction_date)
+    raise 'Cannot withdraw negative amount' if 0 > withdrawal
     raise 'Insufficient funds' if withdrawal > @balance
-
     @balance -= withdrawal
     @transaction_history << { date: date,
                               credit: nil,

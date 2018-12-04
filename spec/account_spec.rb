@@ -29,6 +29,11 @@ describe Account do
       account.credit(300)
       expect { account.debit(500) }.to raise_error 'Insufficient funds'
     end
+
+    it 'raises an error when a negative amount is withdrawn' do
+      account = Account.new
+      expect { account.debit(-100) }.to raise_error 'Cannot withdraw negative amount'
+    end
   end
 
   describe 'transaction_history' do
