@@ -24,7 +24,7 @@ class Account
                               balance: @balance }
   end
 
-  def view_statement(statement = Statement.new)
+  def print_statement(statement = Statement.new)
     statement.view_statement(@transaction_history)
   end
 

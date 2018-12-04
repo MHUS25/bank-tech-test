@@ -36,11 +36,11 @@ describe Account do
     end
   end
 
-  describe 'view_statement' do
+  describe 'print_statement' do
     it 'prints account statment' do
       account = Account.new
       expect(statment).to receive(:view_statement)
-      account.view_statement(statment)
+      account.print_statement(statment)
     end
   end
 end
