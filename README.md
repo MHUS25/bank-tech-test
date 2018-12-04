@@ -45,7 +45,7 @@ To run tests `rspec`
 
 ## My Approach
 
-Two classes: Account (responsible for making and recording transactions) and Statement responsible for printing a statement).
+Two classes: Account (responsible for making and recording transactions) and Statement (responsible for printing statements).
 
 ## Screenshots
 
