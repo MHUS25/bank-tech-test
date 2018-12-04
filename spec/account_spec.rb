@@ -13,4 +13,10 @@ describe Account do
     account.debit(500)
     expect(account.balance).to eq 2500
   end
+
+  it 'raises an error if there is not money for a withdrawal' do
+    account = Account.new
+    account.credit(300)
+    expect{account.debit(500)}.to raise_error "Insufficient funds"
+  end
 end
