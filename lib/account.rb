@@ -15,7 +15,8 @@ class Account
   end
 
   def debit(withdrawal, date = transaction_date)
-    raise "Insufficient funds" if withdrawal > @balance
+    raise 'Insufficient funds' if withdrawal > @balance
+
     @balance -= withdrawal
     @transaction_history << { date: date,
                               credit: nil,
@@ -30,6 +31,6 @@ class Account
   private
 
   def transaction_date
-    Time.now.strftime("%d/%m/%Y")
+    Time.now.strftime('%d/%m/%Y')
   end
 end
