@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MHUS25/bank-tech-test.svg?branch=master)](https://travis-ci.org/MHUS25/bank-tech-test)
+
 # Bank tech test
 
 ## Specification
