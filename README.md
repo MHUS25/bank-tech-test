@@ -36,7 +36,22 @@ date || credit || debit || balance
 
 ## Usage
 
-Run the program from the command line.
+Run the program from the command line e.g.
+
+`require './lib/statement.rb'`
+
+To create an account:
+`account = Account.new`
+
+To deposit:
+`account.credit(1000)`
+
+To withdraw:
+`account.debit(500)`
+
+To print your statement:
+`print account.print_statement`
+
 
 
 ## Running tests
