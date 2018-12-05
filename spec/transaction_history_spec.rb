@@ -2,7 +2,7 @@ require 'transaction_history'
 
 describe TransactionHistory do
   let(:transaction) { double(:transaction) }
-  transaction_history = TransactionHistory.new
+  subject { TransactionHistory.new }
 
   it 'returns a list of transactions' do
     expect(subject.transaction_history).to be_empty
