@@ -7,10 +7,10 @@ class TransactionHistory
   end
 
   def record_transaction(deposit:, withdrawal:, balance:)
-    transaction = Transaction.new
-    @transaction_history << transaction(deposit: deposit,
+    transaction = Transaction.new(deposit: deposit,
                                               withdrawal: withdrawal,
                                               balance: balance
                                                 )
+    @transaction_history << transaction
   end
 end

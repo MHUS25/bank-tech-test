@@ -1,7 +1,8 @@
 require 'transaction_history'
 
 describe TransactionHistory do
-  let(:transaction) { double(:transaction) }
+  let(:transaction) { double :transaction }
+
   subject { TransactionHistory.new }
 
   it 'returns a list of transactions' do
@@ -9,7 +10,7 @@ describe TransactionHistory do
   end
 
   it 'creates a new transaction' do
-    expect(transaction).to receive(:new).with(deposit: 1000, withdrawal: nil, balance: 1000)
+    allow(transaction).to receive(:new).with(deposit: 1000, withdrawal: nil, balance: 1000)
     subject.record_transaction(deposit: 1000, withdrawal: nil, balance: 1000)
   end
 end
