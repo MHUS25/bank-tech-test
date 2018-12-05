@@ -1,15 +1,20 @@
 class TransactionHistory
   attr_reader :transaction_history
 
-  def initialize
+  def initialize(transaction_class = Transaction)
+    @transaction_class = transaction_class
     @transaction_history = []
   end
 
   def record_transaction(deposit:, withdrawal:, balance:)
-    transaction = Transaction.new(deposit: deposit,
+    transaction = @transaction_class.new(deposit: deposit,
                                   withdrawal: withdrawal,
                                   balance: balance)
     @transaction_history << transaction.transaction_data
-     p @transaction_history # => what do you expect to be in here?
+    # p @transaction_history
+  end
+
+  def store(transaction)
+    @transactions << transaction
   end
 end

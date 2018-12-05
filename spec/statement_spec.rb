@@ -3,7 +3,6 @@ require 'statement'
 describe Statement do
   it 'returns a statement with a transaction' do
     transaction_history = [{ date: '04/12/2018', credit: 1000, debit: nil, balance: 1000 }]
-    p transaction_history
     statement = Statement.new
     expect(statement.view_statement(transaction_history)).to eq "date || credit || debit || balance\n04/12/2018 || 1000.00 ||  || 1000.00"
   end
