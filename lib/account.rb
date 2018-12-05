@@ -1,5 +1,4 @@
 class Account
-
   attr_reader :balance, :transaction_history
 
   def initialize(transaction_history = TransactionHistory.new)

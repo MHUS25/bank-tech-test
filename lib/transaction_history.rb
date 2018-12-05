@@ -8,8 +8,8 @@ class TransactionHistory
 
   def record_transaction(deposit:, withdrawal:, balance:)
     transaction = @transaction_class.new(deposit: deposit,
-                                  withdrawal: withdrawal,
-                                  balance: balance)
+                                         withdrawal: withdrawal,
+                                         balance: balance)
     @transaction_history << transaction.transaction_data
     # p @transaction_history
   end
