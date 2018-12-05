@@ -10,5 +10,6 @@ class TransactionHistory
                                   withdrawal: withdrawal,
                                   balance: balance)
     @transaction_history << transaction.transaction_data
+     p @transaction_history # => what do you expect to be in here?
   end
 end
