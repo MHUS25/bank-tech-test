@@ -14,7 +14,4 @@ class TransactionHistory
     # p @transaction_history
   end
 
-  def store(transaction)
-    @transactions << transaction
-  end
 end
