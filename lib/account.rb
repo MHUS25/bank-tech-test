@@ -1,3 +1,4 @@
+# interface for program, responsible for storing & manipulating balance
 class Account
   attr_reader :balance, :transaction_history
 

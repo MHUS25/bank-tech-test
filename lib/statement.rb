@@ -1,5 +1,6 @@
 require_relative './transaction.rb'
 
+# responsible for generating statements
 class Statement
   def generate_statement(transaction_history)
     ['date || credit || debit || balance'] +

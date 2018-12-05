@@ -1,3 +1,4 @@
+# responsible for creating transactions
 class Transaction
   def initialize(deposit:, withdrawal:, balance:)
     @date = Time.now.strftime('%d/%m/%Y')

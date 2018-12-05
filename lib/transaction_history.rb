@@ -1,3 +1,4 @@
+# responsible for recording transactions
 class TransactionHistory
   attr_reader :transaction_history
 
@@ -13,5 +14,4 @@ class TransactionHistory
     @transaction_history << transaction.transaction_data
     # p @transaction_history
   end
-
 end
