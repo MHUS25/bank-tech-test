@@ -1,4 +1,4 @@
-require_relative './account.rb'
+require_relative './transaction.rb'
 
 class Statement
   def generate_statement(transaction_history)
