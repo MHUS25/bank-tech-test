@@ -11,6 +11,6 @@ class TransactionHistory
                                               withdrawal: withdrawal,
                                               balance: balance
                                                 )
-    @transaction_history << transaction
+    @transaction_history << transaction.transaction_data
   end
 end

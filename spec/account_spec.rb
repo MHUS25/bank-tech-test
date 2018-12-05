@@ -42,7 +42,7 @@ describe Account do
       account.credit(1000)
       account.credit(2000)
       account.debit(500)
-      expect(account.transaction_history).not_to be_empty
+      expect(account.transaction_history).not_to be_nil
     end
   end
 
