@@ -25,9 +25,4 @@ class Account
     statement.view_statement(@transaction_history)
   end
 
-  private
-
-  def transaction_date
-    Time.now.strftime('%d/%m/%Y')
-  end
 end
