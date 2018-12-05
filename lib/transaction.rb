@@ -1,5 +1,4 @@
 class Transaction
-
   def initialize(deposit:, withdrawal:, balance:)
     @date = Time.now.strftime('%d/%m/%Y')
     @deposit = deposit
@@ -10,9 +9,8 @@ class Transaction
   def transaction_data
     # [@date, @deposit, @withdrawal, @balance]
     { date: @date,
-                              credit: @deposit,
-                              debit: @withdrawal,
-                              balance: @balance }
-
+      credit: @deposit,
+      debit: @withdrawal,
+      balance: @balance }
   end
 end

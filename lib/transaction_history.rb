@@ -1,5 +1,4 @@
 class TransactionHistory
-
   attr_reader :transaction_history
 
   def initialize
@@ -8,9 +7,8 @@ class TransactionHistory
 
   def record_transaction(deposit:, withdrawal:, balance:)
     transaction = Transaction.new(deposit: deposit,
-                                              withdrawal: withdrawal,
-                                              balance: balance
-                                                )
+                                  withdrawal: withdrawal,
+                                  balance: balance)
     @transaction_history << transaction.transaction_data
   end
 end

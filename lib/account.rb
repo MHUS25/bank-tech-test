@@ -25,5 +25,4 @@ class Account
   def print_statement(statement = Statement.new)
     statement.view_statement(@transactions)
   end
-
 end
