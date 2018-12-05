@@ -62,7 +62,7 @@ To run tests `rspec`
 
 ## My Approach
 
-Two classes: Account (responsible for making and recording transactions) and Statement (responsible for printing statements).
+Four classes: Account (interface for rest of program, responsible for storing & manipulating balance), Transaction (responsible for creating transactions), TransactionHistory (responsible for storing history of transactions) and Statement (responsible for generating statements).
 
 ## Screenshots
 
