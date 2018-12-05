@@ -7,7 +7,6 @@ class Transaction
   end
 
   def transaction_data
-    # [@date, @deposit, @withdrawal, @balance]
     { date: @date,
       credit: @deposit,
       debit: @withdrawal,
