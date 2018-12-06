@@ -2,7 +2,7 @@ require 'transaction_history'
 
 describe TransactionHistory do
   subject { TransactionHistory.new(transaction_class) }
-   let(:transaction_class) { spy('transaction_class') }
+  let(:transaction_class) { spy('transaction_class') }
 
   it 'returns a list of transactions and starts off empty' do
     expect(subject.transaction_history).to be_empty
