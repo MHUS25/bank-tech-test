@@ -38,7 +38,9 @@ ________________________________________________________________________________
 
 ## Usage
 
-Run the program from the command line e.g.
+Run the program via a REPL like IRB e.g.
+
+Require relevant files:
 
 `require './lib/transaction.rb'`
 
@@ -70,6 +72,6 @@ To run tests `rspec`
 
 Four classes: Account (interface for rest of program, responsible for storing & manipulating balance), Transaction (responsible for creating transactions), TransactionHistory (responsible for storing history of transactions) and Statement (responsible for generating statements).
 
-## Screenshots
+## Screenshot
 
 ![ScreenShot](./public/images/ScreenShot.png)
