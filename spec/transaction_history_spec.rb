@@ -9,7 +9,7 @@ describe TransactionHistory do
   end
 
   it 'records a new transaction' do
+    expect(transaction_class).to receive(:new)
     subject.record_transaction(deposit: 1000, withdrawal: nil, balance: 1000)
-    expect(transaction_class).to have_recieved(:new)
   end
 end
