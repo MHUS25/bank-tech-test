@@ -43,6 +43,7 @@ Run the program from the command line e.g.
 `require './lib/transaction.rb'`
 `require './lib/transaction_history.rb'`
 `require './lib/statement.rb'`
+`require './lib/account.rb'`
 
 To create an account:
 `account = Account.new`
