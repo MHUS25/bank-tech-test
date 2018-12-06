@@ -1,7 +1,7 @@
 require 'account'
 
 describe Account do
-  let(:statment) { double :statement }
+  let(:statement) { double :statement }
 
   describe 'credit' do
     it 'increases balance when a deposit is made' do
@@ -37,20 +37,20 @@ describe Account do
   end
 
   describe 'transaction_history' do
-    it 'records transactions' do
+    it 'has a history of transactions' do
       account = Account.new
       account.credit(1000)
       account.credit(2000)
       account.debit(500)
-      expect(account.transaction_history.length).to eq 3
+      expect(account.transaction_history).not_to be_nil
     end
   end
 
   describe 'print_statement' do
     it 'prints account statment' do
       account = Account.new
-      expect(statment).to receive(:view_statement)
-      account.print_statement(statment)
+      expect(statement).to receive(:view_statement)
+      account.print_statement(statement)
     end
   end
 end

@@ -2,7 +2,6 @@ require 'account'
 require 'statement'
 
 describe 'Feature test' do
-
   let(:date) { Time.now.strftime('%d/%m/%Y') }
 
   it 'returns a statement with all transactions' do
