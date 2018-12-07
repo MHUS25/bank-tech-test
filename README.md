@@ -82,10 +82,10 @@ After completing the implementation, I refactored by extracting responsibilities
 The final design of the program is as follows.
 
 Four classes: 
-* Account (interface for rest of program, responsible for storing & manipulating the balance)
-* Transaction (responsible for creating transactions)
-* TransactionHistory (responsible for storing history of transactions) 
-* Statement (responsible for generating statements).
+* `Account` (interface for rest of program, responsible for storing & manipulating the balance)
+* `Transaction` (responsible for creating transactions)
+* `TransactionHistory` (responsible for storing history of transactions) 
+* `Statement` (responsible for generating statements).
 
 ## Screenshot
 
