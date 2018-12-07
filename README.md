@@ -70,7 +70,22 @@ To run tests `rspec`
 
 ## My Approach
 
-Four classes: Account (interface for rest of program, responsible for storing & manipulating balance), Transaction (responsible for creating transactions), TransactionHistory (responsible for storing history of transactions) and Statement (responsible for generating statements).
+I started off with two classes: 
+`Account`, which was responisible for 
+1) Storing and manipulating the balance
+2) Storing and manipulating transactions
+
+And `Statement`, which was responsible for generating statements.
+
+After completing the implementation, I refactored by extracting responsibilities from the Account class to ensure all my classes had 'Single Responsibilities' and were being tested in isolation.
+
+The final design of the program is as follows.
+
+Four classes: 
+* Account (interface for rest of program, responsible for storing & manipulating the balance)
+* Transaction (responsible for creating transactions)
+* TransactionHistory (responsible for storing history of transactions) 
+* Statement (responsible for generating statements).
 
 ## Screenshot
 
